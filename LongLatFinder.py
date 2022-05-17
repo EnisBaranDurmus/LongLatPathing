@@ -22,7 +22,7 @@ def kes():
     lon2 = locPoint.lon + math.atan2(math.sin(locPoint.bearing) * math.sin(locPoint.angularD)
      * math.cos(locPoint.lat), math.cos(locPoint.angularD) - math.sin(locPoint.lat) * math.sin(lat2))
 
-    print(lat2, ", ", lon2)
+    print(round(math.degrees(lat2), 6), ", ", round(math.degrees(lon2), 6))
 
 locPoint.lat = math.radians(latlonDecimalConverter('''53°19'14"N'''))
 locPoint.lon = math.radians(latlonDecimalConverter('''001°43'47"W'''))
@@ -30,3 +30,6 @@ locPoint.bearing = math.radians(latlonDecimalConverter('''096°01'18"'''))
 
 kes()
 print(locPoint.lat, locPoint.lon, locPoint.bearing, locPoint.angularD)
+print(latlonDecimalConverter('''53°19'14"N'''), latlonDecimalConverter('''001°43'47"W'''), latlonDecimalConverter('''096°01'18"'''))
+print(latlonDecimalConverter('''53°11'18"N'''))
+print(latlonDecimalConverter('''000°08'00"E'''))
