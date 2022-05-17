@@ -1,4 +1,3 @@
-from distutils.log import debug
 import math
 import re
 class locPoint:
