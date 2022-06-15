@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/locconverter.egg-info/PKG-INFO
+src/locconverter.egg-info/SOURCES.txt
+src/locconverter.egg-info/dependency_links.txt
+src/locconverter.egg-info/top_level.txt
+src/rep/LongLatFinder.py
+src/rep/__init__.py
+src/rep/col.py
+src/rep/geo.py
+src/rep/loc.py
